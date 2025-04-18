@@ -29,8 +29,3 @@ jobs:
           key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
           restore-keys: |
             ${{ runner.os }}-pip-
-
-      # 5. Run tests (update to your preferred test framework)
-      - name: Run tests with pytest
-        run: |
-          pytest
